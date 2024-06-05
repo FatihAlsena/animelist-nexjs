@@ -1,18 +1,20 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
+// KASIH NAMA DI ATAS WEBNYA
 export const metadata = {
-  title: 'AnimeList',
+  title: 'CloneNimeList',
   description: 'Website untuk mencari anime',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div>TESTING</div>
+      <body className={inter.className} suppressHydrationWarning={true}>
+        <Navbar />
         {children}
         </body>
     </html>
