@@ -12,7 +12,7 @@ const Page = async() => {
             <div className="flex flex-wrap gap-4 py-8">
                 <Link href="/users/dashboard/collection"
                 className="bg-color-accent text-color-dark font-bold px-4 py-2 text-xl">My Collection</Link>
-                <Link href="/users/dashboard/collection"
+                <Link href="/users/dashboard/comment"
                 className="bg-color-accent text-color-dark font-bold px-4 py-2 text-xl">My Comment</Link>
             </div>
         </div>   

@@ -4,7 +4,7 @@ import { useState } from "react"
 import YouTube from "react-youtube"
 
 const VideoPlayer = ({ youtubeId }) => {
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)  // Set initial state to false
 
     const handleVideoPlayer = () => {
         setIsOpen((prevState) => !prevState)
@@ -40,7 +40,6 @@ const VideoPlayer = ({ youtubeId }) => {
     }
 
     return isOpen ? <Player /> : <ButtonOpenPlayer />
-
 }
 
 export default VideoPlayer
